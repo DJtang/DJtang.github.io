@@ -9,7 +9,7 @@
     
     <title>
         
-            单例模式 |
+            根据数组生成二叉树 |
         
         爱吃鱼的猫的个人博客
     </title>
@@ -146,7 +146,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">单例模式</span>
+            <span class="title-hover-animation">根据数组生成二叉树</span>
         </div>
 
         
@@ -165,8 +165,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-04-26 21:17:23</span>
-        <span class="mobile">2022-04-26 21:17</span>
+        <span class="pc">2022-04-28 09:59:45</span>
+        <span class="mobile">2022-04-28 09:59</span>
     </span>
     
         <span class="article-categories article-meta-item">
@@ -174,7 +174,7 @@
             <ul>
                 
                     <li>
-                        <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>&nbsp;
+                        <a href="/categories/%E7%AE%97%E6%B3%95/">算法</a>&nbsp;
                     </li>
                 
             </ul>
@@ -186,7 +186,7 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">单例模式</a>&nbsp;
+                        <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%94%9F%E6%88%90/">二叉树生成</a>&nbsp;
                     </li>
                 
             </ul>
@@ -196,12 +196,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>437 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>177 Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>2 Mins</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
         </span>
     
     
@@ -217,11 +217,9 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="饿汉模式"><a href="#饿汉模式" class="headerlink" title="饿汉模式"></a>饿汉模式</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">HungrySingleton</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line">    <span class="type">static</span> HungrySingleton* instance;</span><br><span class="line">    <span class="built_in">HungrySingleton</span>() = <span class="keyword">default</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    ~<span class="built_in">HungrySingleton</span>() = <span class="keyword">default</span>;</span><br><span class="line">    <span class="function"><span class="type">static</span> HungrySingleton* <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">showMessage</span><span class="params">()</span></span>&#123;</span><br><span class="line">        cout&lt;&lt;count&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 初始化类静态变量 */</span></span><br><span class="line">HungrySingleton* HungrySingleton::instance = <span class="keyword">new</span> <span class="built_in">HungrySingleton</span>();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    HungrySingleton* object = HungrySingleton::<span class="built_in">getInstance</span>();</span><br><span class="line">    object-&gt;<span class="built_in">showMessage</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="定义二叉树"><a href="#定义二叉树" class="headerlink" title="定义二叉树"></a>定义二叉树</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">TreeNode</span>&#123;</span><br><span class="line">  	<span class="type">int</span> val;</span><br><span class="line">    TreeNode* left;</span><br><span class="line">    TreeNode* right;</span><br><span class="line">    <span class="built_in">TreeNode</span>(<span class="type">int</span> _val):<span class="built_in">val</span>(_val)&#123;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-<h1 id="懒汉模式"><a href="#懒汉模式" class="headerlink" title="懒汉模式"></a>懒汉模式</h1><h2 id="线程安全（双重校验锁）"><a href="#线程安全（双重校验锁）" class="headerlink" title="线程安全（双重校验锁）"></a>线程安全（双重校验锁）</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;mutex&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LazySingleton</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">static</span> LazySingleton* instance;</span><br><span class="line">    <span class="type">static</span> mutex _lock;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">LazySingleton</span>() = <span class="keyword">default</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    ~<span class="built_in">LazySingleton</span>() = <span class="keyword">default</span>;</span><br><span class="line">    <span class="function"><span class="type">static</span> LazySingleton* <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">/* 缩小锁粒度，提高效率 */</span></span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="function">lock_guard&lt;mutex&gt; <span class="title">locker</span><span class="params">(_lock)</span></span>;</span><br><span class="line">            <span class="keyword">if</span>(instance== <span class="literal">nullptr</span>)&#123;</span><br><span class="line">                instance = <span class="keyword">new</span> LazySingleton;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">showMessage</span><span class="params">()</span></span>&#123;</span><br><span class="line">        cout&lt;&lt;count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 初始化类静态变量 */</span></span><br><span class="line">mutex LazySingleton::_lock;</span><br><span class="line">LazySingleton* LazySingleton::instance = <span class="literal">nullptr</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    LazySingleton* object = LazySingleton::<span class="built_in">getInstance</span>();</span><br><span class="line">    object-&gt;<span class="built_in">showMessage</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="线程安全（局部静态变量）"><a href="#线程安全（局部静态变量）" class="headerlink" title="线程安全（局部静态变量）"></a>线程安全（局部静态变量）</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">LazySingleton</span>&#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">LazySingleton</span>() = <span class="keyword">default</span>;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    ~<span class="built_in">LazySingleton</span>() = <span class="keyword">default</span>;</span><br><span class="line">    <span class="function"><span class="type">static</span> LazySingleton* <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">/* 局部静态变量只会在第一次声明的时候初始化，在c++11以及之后的版本可以做到线程安全 </span></span><br><span class="line"><span class="comment">        1.变量在代码第一次执行到变量声明的地方时初始化。</span></span><br><span class="line"><span class="comment">		2.初始化过程中发生异常的话视为未完成初始化，未完成初始化的话，需要下次有代码执行到相同位置时再次初始化。</span></span><br><span class="line"><span class="comment">        3.在当前线程执行到需要初始化变量的地方时，如果有其他线程正在初始化该变量，则阻塞当前线程，直到初始化完成为止。</span></span><br><span class="line"><span class="comment">        4.如果初始化过程中发生了对初始化的递归调用，则视为未定义行为</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="type">static</span> LazySingleton instance;</span><br><span class="line">        <span class="keyword">return</span> &amp;instance;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">showMessage</span><span class="params">()</span></span>&#123;</span><br><span class="line">        cout&lt;&lt;count;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    LazySingleton* object = LazySingleton::<span class="built_in">getInstance</span>();</span><br><span class="line">    object-&gt;<span class="built_in">showMessage</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="层序遍历产生"><a href="#层序遍历产生" class="headerlink" title="层序遍历产生"></a>层序遍历产生</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	vector&lt;<span class="type">int</span>&gt; tree = &#123;<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;#&#x27;</span>,<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;#&#x27;</span>,<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;#&#x27;</span>,<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;#&#x27;</span>,<span class="string">&#x27;1&#x27;</span>&#125;;</span><br><span class="line">    <span class="type">int</span> length = tree.<span class="built_in">size</span>();</span><br><span class="line">	queue&lt;TreeNode*&gt; Q;</span><br><span class="line">    TreeNode* root;</span><br><span class="line">    <span class="keyword">if</span>(tree[<span class="number">0</span>]==<span class="string">&#x27;1&#x27;</span>)&#123;</span><br><span class="line">        root = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(<span class="number">0</span>);</span><br><span class="line">    	Q.<span class="built_in">push</span>(root);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> index = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(!Q.<span class="built_in">empty</span>())&#123;</span><br><span class="line">        <span class="type">int</span> len = Q.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">            TreeNode* temp = Q.<span class="built_in">front</span>();</span><br><span class="line">            Q.<span class="built_in">pop</span>();</span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span>(index&lt;length&amp;&amp;tree[index]==<span class="string">&#x27;1&#x27;</span>)&#123;</span><br><span class="line">                temp-&gt;left = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(<span class="number">0</span>);</span><br><span class="line">                Q.<span class="built_in">push</span>(temp-&gt;left);</span><br><span class="line">            &#125;</span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span>(index&lt;length&amp;&amp;tree[index]==<span class="string">&#x27;1&#x27;</span>)&#123;</span><br><span class="line">                temp-&gt;right = <span class="keyword">new</span> <span class="built_in">TreeNode</span>(<span class="number">0</span>);</span><br><span class="line">                Q.<span class="built_in">push</span>(temp-&gt;right);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
         </div>
@@ -230,11 +228,11 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：单例模式</li>
+        <li>Post title：根据数组生成二叉树</li>
         <li>Post author：爱吃鱼的猫</li>
-        <li>Create time：2022-04-26 21:17:23</li>
+        <li>Create time：2022-04-28 09:59:45</li>
         <li>
-            Post link：https://djtang.github.io/2022/04/26/单例模式/
+            Post link：https://djtang.github.io/2022/04/28/Build-tree/
         </li>
         <li>
             Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
@@ -249,7 +247,7 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">#单例模式</a>&nbsp;
+                        <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%94%9F%E6%88%90/">#二叉树生成</a>&nbsp;
                     </li>
                 
             </ul>
@@ -261,13 +259,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/04/28/Build-tree/"
+                           href="/2022/04/28/c-%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%A7%81%E6%9C%89%E6%88%90%E5%91%98/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">根据数组生成二叉树</span>
+                                <span class="post-nav-title-item">c++拷贝构造函数为什么可以访问另一个对象的私有成员</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
@@ -277,10 +275,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/04/26/hexo+github%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/"
+                           href="/2022/04/26/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">hexo+github搭建自己的博客</span>
+                                <span class="post-nav-title-item">单例模式</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -489,7 +487,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A5%BF%E6%B1%89%E6%A8%A1%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">饿汉模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%87%92%E6%B1%89%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">懒汉模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%EF%BC%88%E5%8F%8C%E9%87%8D%E6%A0%A1%E9%AA%8C%E9%94%81%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">线程安全（双重校验锁）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%EF%BC%88%E5%B1%80%E9%83%A8%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">线程安全（局部静态变量）</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="nav-number">2.</span> <span class="nav-text">定义二叉树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86%E4%BA%A7%E7%94%9F"><span class="nav-number">3.</span> <span class="nav-text">层序遍历产生</span></a></li></ol>
     </div>
 </div>
         </aside>
